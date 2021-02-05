@@ -1,0 +1,69 @@
+body
+{
+margin: 30px 200px 60px 120px;
+}
+
+
+
+a
+{
+font-family: "PT Sans"
+}
+
+h1
+{
+font-family: "Courier New"
+}
+
+
+h2
+{
+font-family: "Courier New"
+}
+
+h3
+{
+font-family: "Courier New"
+}
+
+ul
+{
+font-family: "PT Sans"
+}
+
+p
+{
+font-family: "PT Sans"
+}
+
+figure
+{
+font-family: "PT Sans"
+}
+
+img{ 
+width: 200px;
+}
+
+/* unvisited link */
+a:link {
+	color: #999;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #999;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #999;
+    text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+    color: #999;
+}
