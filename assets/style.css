@@ -24,7 +24,13 @@ a:hover{text-decoration:underline}
 
 
 
-
+/* Keep inline content images neat */
+.content img {
+  max-width: 100%;   /* never overflow text width */
+  height: auto;      /* preserve proportions */
+  display: block;    /* optional: puts each image on its own line */
+  margin: 1rem auto; /* centers with spacing */
+}
 
 
 .site-nav a:last-child{border-bottom:none}
