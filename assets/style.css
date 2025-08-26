@@ -1,0 +1,122 @@
+:root{
+  --bg:#ffffff;
+  --text:#111111;
+  --muted:#555555;
+  --link:#0a66c2;
+  --border:#e5e7eb;
+  --accent:#111111;
+  --maxw: 860px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 Garamond, "Times New Roman", serif;}
+a{color:var(--link);text-decoration:none}
+a:hover{text-decoration:underline}
+
+.title-block{max-width:70%}
+.site-title{margin:0; font-size:1.875rem; line-height:1.2}
+.site-title a{color:inherit; text-decoration:none}
+.site-subtitle{margin:.25rem 0 0; color:var(--muted)}
+.menu-toggle{
+  display:inline-flex; align-items:center; gap:.5rem;
+  border:1px solid var(--border); background:#fff; padding:.4rem .6rem;
+  border-radius:.5rem; cursor:pointer; font-size:1rem;
+}
+
+
+
+
+
+
+.site-nav a:last-child{border-bottom:none}
+.content{max-width:var(--maxw); margin:40px auto 80px; padding:0 16px;}
+h2{font-size:1.5rem; margin:0 0 .25rem}
+.divider{border:none; border-top:2px solid var(--text); width:56px; margin:.5rem 0 1.5rem}
+h3{margin-top:2rem}
+.paper-list, .teaching-list, .thesis-list{padding-left:1.25rem}
+.paper-list li, .teaching-list li, .thesis-list li{margin:.35rem 0}
+.paper-list .title{font-style:italic}
+.pdf{margin-left:.4rem}
+.contact-block{margin-top:1rem}
+.site-footer{border-top:1px solid var(--border); padding:16px; text-align:center; color:var(--muted)}
+
+}
+
+  .site-nav[data-open="false"]{opacity:0; transform:translateY(-6px)}
+}
+
+/* Force headshot to a neat circle */
+.sidebar .headshot,
+img.headshot {
+  width: 120px !important;
+  height: 120px !important;
+  max-width: 120px !important;
+  max-height: 120px !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
+  border: 2px solid #ccc;
+  display: block !important;
+  margin: 0 auto 16px !important;
+}
+
+/* On larger screens, bump the size */
+@media (min-width: 960px) {
+  .sidebar .headshot,
+  img.headshot {
+    width: 150px !important;
+    height: 150px !important;
+    max-width: 150px !important;
+    max-height: 150px !important;
+  }
+}
+.title-block{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+}
+
+
+/* Simplified toggle button (mobile) */
+.menu-toggle{
+  display:inline-flex; align-items:center; gap:.5rem;
+  border:1px solid var(--border); background:#fff; padding:.4rem .6rem;
+  border-radius:.5rem; cursor:pointer; font-size:1rem;
+}
+.menu-toggle .icon-close{display:none}
+.menu-toggle[aria-expanded="true"] .icon-close{display:inline}
+.menu-toggle[aria-expanded="true"] .icon-menu{display:none}
+
+/* Improve typography for two-column layout */
+.content h2{margin-top:12px}
+
+
+/* === Two-column layout === */
+.mobile-header{
+  position:sticky; top:0; z-index:30;
+  display:flex; justify-content:flex-end; padding:10px 12px;
+  border-bottom:1px solid var(--border); background:var(--bg);
+}
+.layout{
+  display:grid; grid-template-columns: 1fr; gap:0;
+  max-width: 1200px; margin:0 auto;
+}
+.sidebar{
+  border-right:1px solid var(--border);
+  padding:16px;
+  background:var(--bg);
+}
+.side-nav{
+  display:flex; flex-direction:column; gap:4px; margin-top:8px;
+}
+.side-nav a{
+  padding:.35rem 0;
+}
+/* Keep the divider, headings, etc. */
+.content{max-width:unset; width:100%; padding:20px 16px; margin:0 auto 80px;}
+
+@media (min-width: 960px){
+  .mobile-header{display:none;}
+  .layout{grid-template-columns: 280px 1fr;}
+  .sidebar{position:sticky; top:0; height:100vh; overflow:auto; padding:24px;}
+  .title-block{max-width:unset;}
+}
+
