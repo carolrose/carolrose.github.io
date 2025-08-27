@@ -31,6 +31,20 @@
       <span class="icon icon-close" aria-hidden="true">✕</span>
       <span class="label">Menu</span>
     </button>
+      
+      <style>
+  .content { max-width: 860px; margin: 0 auto 80px; }
+  .content img:not(.headshot) { max-width: 100% !important; height: auto !important; display: block !important; margin: 1rem auto; }
+  .content img[width], .content img[height] { width: auto !important; height: auto !important; }
+  .sidebar .headshot, img.headshot {
+    width: 120px !important; height: 120px !important; max-width: 120px !important; max-height: 120px !important;
+    object-fit: cover !important; border-radius: 50% !important; border: 2px solid #ccc; display: block !important; margin: 0 auto 16px !important;
+  }
+  @media (min-width: 960px) {
+    .sidebar .headshot, img.headshot { width: 150px !important; height: 150px !important; max-width: 150px !important; max-height: 150px !important; }
+    .sidebar .title-block{ display:flex; flex-direction:column; align-items:center; text-align:center; }
+  }
+</style>
   </header>
   <div class="layout">
 
@@ -88,7 +102,7 @@ For inquiries about Ch'ol interpreting and translation email me <a href="mailto:
   </main>
   </div>
   <footer class="site-footer">
-    <p>&copy; </p>
+    <p>&copy; Carol Rose Little</p>
   </footer>
 </body>
 </html>

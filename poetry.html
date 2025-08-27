@@ -11,7 +11,19 @@
   <link rel="stylesheet" href="assets/style.css" />
   <script defer src="assets/script.js"></script>
 
-
+<style>
+  .content { max-width: 860px; margin: 0 auto 80px; }
+  .content img:not(.headshot) { max-width: 100% !important; height: auto !important; display: block !important; margin: 1rem auto; }
+  .content img[width], .content img[height] { width: auto !important; height: auto !important; }
+  .sidebar .headshot, img.headshot {
+    width: 120px !important; height: 120px !important; max-width: 120px !important; max-height: 120px !important;
+    object-fit: cover !important; border-radius: 50% !important; border: 2px solid #ccc; display: block !important; margin: 0 auto 16px !important;
+  }
+  @media (min-width: 960px) {
+    .sidebar .headshot, img.headshot { width: 150px !important; height: 150px !important; max-width: 150px !important; max-height: 150px !important; }
+    .sidebar .title-block{ display:flex; flex-direction:column; align-items:center; text-align:center; }
+  }
+</style>
 
 </head>
 <body>
@@ -66,7 +78,7 @@ Together with poet and writer <a href="https://www.charlottemfriedman.com/" targ
   Charlotte and I have translated <i>Ipusik'al Matye'lum/Coraz&oacute;n de Selva</i> (Heart of a wild land, published in 2013 by Pluralia) as well as  <i>Iso&ntilde;il Ja'al/Danza de la Lluvia</i> (Dance of the rain, to be published this year by the University of Guadalajara).          
     </p>
     
-            <h2>publications</h2>
+            <h3>Publications</h3>
 <ul>
        <li>Forthcoming. Translation of xCh'ok "Girl" by Juana Peñate in <i>Poetry London</i>.</li>
        <li>2023 Two Ch'ol poems by Miriam Hernandez, translated by me and Charlotte Friedman in <i>World Literature Today</i> . <a href="https://www.worldliteraturetoday.org/2023/september/two-chol-poems-miriam-esperanza-hernandez-vazquez"> [link] </a></li>
@@ -89,7 +101,7 @@ Together with poet and writer <a href="https://www.charlottemfriedman.com/" targ
     
 
     
-    <h2>Juana Pe&ntilde;ate Montejo</h2>
+    <h3>Juana Pe&ntilde;ate Montejo</h3>
    
 <img src="assets/juana-foto.jpg"  alt="…" class="img-small">
             <br>
