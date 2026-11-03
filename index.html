@@ -1,116 +1,323 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-      <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DZH041BH7S"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-DZH041BH7S');
-</script>
-<meta name="author" content="Carol Rose Little" />
-  <meta name="keywords" content="Carol Rose Little, Carol Little, Linguistics, Carol Rose Little, Cornell, Oklahoma, Syntax, Semantics, Fieldwork, Morphology, Mi'gmaq, Mi'kmaq, Micmac, McGill, Endangered Languages, Algonquian, Ch'ol, Chol, Mayan, Chol poetry, Ch'ol poetry, Ch'ol intepreting, Chol interpreting, Ch'ol intepreter, Chol interpreter, Tumbala, Indigenous Poetry, Poetry Translation" />
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DZH041BH7S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DZH041BH7S');
+  </script>
 
+  <meta name="author" content="Carol Rose Little" />
+  <meta name="keywords" content="Carol Rose Little, Linguistics, Cornell, Oklahoma, Syntax, Semantics, Fieldwork, Morphology, Mi'gmaq, Mi'kmaq, McGill, Endangered Languages, Algonquian, Ch'ol, Mayan, Indigenous Poetry, Poetry Translation" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Carol Rose Little</title>
   <meta name="description" content="Carol Rose Little" />
+  <title>Carol Rose Little</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- System fonts for speed; easy to change in CSS -->
   <link rel="stylesheet" href="assets/style.css" />
   <script defer src="assets/script.js"></script>
+
+  <style>
+    /* Headshot */
+    .sidebar .headshot,
+    img.headshot {
+      width: 120px !important;
+      height: 120px !important;
+      max-width: 120px !important;
+      max-height: 120px !important;
+      object-fit: cover !important;
+      border-radius: 50% !important;
+      border: 2px solid #ccc;
+      display: block !important;
+      margin: 0 auto 16px !important;
+    }
+
+    @media (min-width: 960px) {
+      .sidebar .headshot,
+      img.headshot {
+        width: 150px !important;
+        height: 150px !important;
+        max-width: 150px !important;
+        max-height: 150px !important;
+      }
+
+      .sidebar .title-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+    /* Main homepage columns */
+    .home-columns {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 240px;
+      gap: 32px;
+      min-width: 0;
+      align-items: start;
+    }
+
+    /* About column */
+    .home-columns .content {
+      min-width: 0;
+      max-width: none;
+      margin: 0;
+    }
+
+    /* Book cover */
+    .home-columns .book-cover {
+      width: 180px !important;
+      max-width: 100% !important;
+      height: auto !important;
+      display: block;
+      margin: 16px 0;
+    }
+
+    /* Recent & Upcoming column */
+    .news-column {
+      min-width: 0;
+      border-left: 1px solid #ddd;
+      padding-left: 22px;
+    }
+
+    .news-column h2 {
+      font-size: 1.15rem;
+      line-height: 1.35;
+      margin-top: 0;
+    }
+
+    .news-column h3 {
+      font-size: 1rem;
+      margin-top: 24px;
+      margin-bottom: 10px;
+    }
+
+    .news-column p {
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+
+    .news-entry {
+      margin-bottom: 18px;
+    }
+
+    .news-date {
+      font-weight: 600;
+    }
+
+    /* Mobile and smaller screens */
+    @media (max-width: 1100px) {
+      .home-columns {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 32px;
+      }
+
+      .news-column {
+        border-left: none;
+        border-top: 1px solid #ddd;
+        padding-left: 0;
+        padding-top: 24px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  
+
+  <!-- Mobile menu -->
   <header class="mobile-header">
-    <button class="menu-toggle" aria-expanded="false" aria-controls="sidebar">
+    <button class="menu-toggle"
+            aria-expanded="false"
+            aria-controls="sidebar">
       <span class="icon icon-menu" aria-hidden="true">☰</span>
       <span class="icon icon-close" aria-hidden="true">✕</span>
       <span class="label">Menu</span>
     </button>
-      
-      <style>
-  .content { max-width: 860px; margin: 0 auto 80px; }
-  .content img:not(.headshot) { max-width: 100% !important; height: auto !important; display: block !important; margin: 1rem auto; }
-  .content img[width], .content img[height] { width: auto !important; height: auto !important; }
-  .sidebar .headshot, img.headshot {
-    width: 120px !important; height: 120px !important; max-width: 120px !important; max-height: 120px !important;
-    object-fit: cover !important; border-radius: 50% !important; border: 2px solid #ccc; display: block !important; margin: 0 auto 16px !important;
-  }
-  @media (min-width: 960px) {
-    .sidebar .headshot, img.headshot { width: 150px !important; height: 150px !important; max-width: 150px !important; max-height: 150px !important; }
-    .sidebar .title-block{ display:flex; flex-direction:column; align-items:center; text-align:center; }
-  }
-</style>
   </header>
+
   <div class="layout">
 
-  <aside class="sidebar" id="sidebar">
-    <div class="title-block">
-    <img src="assets/carol-rose-little.png" alt="Your Name"
-     class="headshot"
-     style="width:120px;height:120px;object-fit:cover;border-radius:50%;border:2px solid #ccc;display:block;margin:0 auto 16px;">
-      <h1 class="site-title"><a href="index.html">Carol Rose Little</a></h1>
-      <p class="site-subtitle">Assistant Professor of Linguistics<br>University of Oklahoma</p>
-    </div>
-    <nav class="side-nav">
-      <a href="index.html">About</a>
-     <a href="papers.html">Papers</a>
-      <a href="poetry.html">Poetry translation</a>
-      <a href="https://www.dropbox.com/scl/fi/1andrc8ifn0gbrcwujeon/cv-carol-rose-little.pdf?rlkey=isglaaxgng5lrhwu6v0gdf7yv&st=4vvwwc5n&dl=0">CV</a>
-      
-    </nav>
-  </aside>
+    <!-- Left sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="title-block">
 
-  <main class="content">
-<h2>About</h2>
-    <hr class="divider" />
-<p>
-    I am an assistant professor of linguistics at the <a href="https://www.ou.edu/" target=blank>University of Oklahoma</a> in the <a href="https://www.ou.edu/cas/modlang" target=blank>Department of Modern Languages, Literatures, and Linguistics</a>.
-   <br>
-  <br>
-  
-  I am interested in syntax and its connections to the semantics and morphology interfaces. The empirical basis for my work comes from my original fieldwork with under-studied languages, primarily Ch'ol (Mayan, Mexico). I have a PhD in linguistics from <a href="http://linguistics.cornell.edu/" target="_blank">Cornell University</a> with graduate minors in <a href="https://aiisp.cornell.edu/" target="_blank">American Indian and Indigenous Studies</a> and <a href="https://cogsci.cornell.edu/" target="_blank">Cognitive Science</a>. 
+        <img src="assets/carol-rose-little.png"
+             alt="Carol Rose Little"
+             class="headshot">
 
- 
+        <h1 class="site-title">
+          <a href="index.html">Carol Rose Little</a>
+        </h1>
 
+        <p class="site-subtitle">
+          Assistant Professor of Linguistics<br>
+          University of Oklahoma
+        </p>
+      </div>
 
-     <br>
-  <br>
-    Working with poet and author <a href="https://www.charlottemfriedman.com" target="_blank">Charlotte Friedman</a>, I have translated two collections of Juana Pe&ntilde;ate's from Ch'ol to English and have published poems from them in literary journals such as <i>World Literature Today</i>, <i>Poetry London</i> and <i>Exchanges</i>. For a list and links to our Ch'ol poetry translations click <a href="poetry.html">here</a>. Our book, <i>From Lightning's Strike</i>, was published in March 2026 with Mayapple Press. Order <a href="  http://mayapplepress.com/from-lightnings-strike-juana-karen-penate-translated-from-the-chol-language-by-carol-rose-little-and-charlotte-friedman/" target="_blank">here</a>!
+      <nav class="side-nav">
+        <a href="index.html">About</a>
+        <a href="papers.html">Papers</a>
+        <a href="poetry.html">Poetry translation</a>
+        <a href="https://www.dropbox.com/scl/fi/1andrc8ifn0gbrcwujeon/cv-carol-rose-little.pdf?rlkey=isglaaxgng5lrhwu6v0gdf7yv&amp;st=4vvwwc5n&amp;dl=0">CV</a>
+      </nav>
+    </aside>
 
+    <!-- Middle and right columns -->
+    <div class="home-columns">
 
-      <p>
-<img src="assets/lightning.jpg" alt="…" class="img-small">
-    <br>
-    
-          
-             </p>
-  
+      <!-- Middle: About -->
+      <main class="content">
 
-     <br>
-  <br>
-  
-    I am a professionally qualified Ch’ol (also spelled Chol) interpreter, working in both the Tila and Tumbala dialects. I have provided interpretation services in U.S. state superior courts as well as federal courts. I have written about about my experiences interpreting in <i>Current Anthropology</i> (<a href="https://www.journals.uchicago.edu/doi/10.1086/737862" target="_blank">here</a>) and <i>World Literature Today</i>  (<a href="https://worldliteraturetoday.org/2025/november/not-muted-not-silent-work-translation-poetry-and-courtroom-carol-rose-little" target="_blank">here</a>).
-For inquiries about Ch'ol interpreting and translation email me <a href="mailto:carolrlittle@gmail.com" target="_blank">
-              <span class="glyphicon glyphicon-send"></span> 
-              here</a>.
+        <h2>About</h2>
+        <hr class="divider" />
 
-</p>
-<p class="contact-block">
-  <strong>Contact:</strong><br/>
-  Department of Modern Langugages, Literatures, and Linguistics<br/>
-  University of Oklahoma<br/>
-  <br/>
-  <a href="mailto:you@example.edu">little@ou.edu</a>
-</p>
-  </main>
+        <p>
+          I am an assistant professor of linguistics
+          at the
+          <a href="https://www.ou.edu/" target="_blank">University of Oklahoma</a>
+          in the
+          <a href="https://www.ou.edu/cas/modlang" target="_blank">Department of Modern Languages, Literatures, and Linguistics</a>.
+        </p>
+
+        <p>
+          I am interested in syntax and its connections
+          to the semantics and morphology interfaces.
+          The empirical basis for my work comes from
+          my original fieldwork with under-studied
+          languages, primarily Ch'ol (Mayan, Mexico).
+          I have a PhD in linguistics from
+          <a href="http://linguistics.cornell.edu/" target="_blank">Cornell University</a>
+          with graduate minors in
+          <a href="https://aiisp.cornell.edu/" target="_blank">American Indian and Indigenous Studies</a>
+          and
+          <a href="https://cogsci.cornell.edu/" target="_blank">Cognitive Science</a>.
+        </p>
+
+        <p>
+          Working with poet and author
+          <a href="https://www.charlottemfriedman.com" target="_blank">Charlotte Friedman</a>,
+          I have translated two collections of Juana
+          Pe&ntilde;ate's from Ch'ol to English and have
+          published poems from them in literary journals
+          such as <i>World Literature Today</i>,
+          <i>Poetry London</i> and <i>Exchanges</i>.
+          For a list and links to our Ch'ol poetry
+          translations click
+          <a href="poetry.html">here</a>.
+          Our book, <i>From Lightning's Strike</i>,
+          was published in March 2026 with Mayapple Press.
+          Order
+          <a href="http://mayapplepress.com/from-lightnings-strike-juana-karen-penate-translated-from-the-chol-language-by-carol-rose-little-and-charlotte-friedman/" target="_blank">here</a>!
+        </p>
+
+        <img src="assets/lightning.jpg"
+             alt="From Lightning's Strike book cover"
+             class="book-cover">
+
+        <p>
+          I am a professionally qualified Ch'ol
+          (also spelled Chol) interpreter, working
+          in both the Tila and Tumbala dialects.
+          I have provided interpretation services
+          in U.S. state superior courts as well as
+          federal courts. I have written about
+          my experiences interpreting in
+          <i>Current Anthropology</i>
+          (<a href="https://www.journals.uchicago.edu/doi/10.1086/737862" target="_blank">here</a>)
+          and <i>World Literature Today</i>
+          (<a href="https://worldliteraturetoday.org/2025/november/not-muted-not-silent-work-translation-poetry-and-courtroom-carol-rose-little" target="_blank">here</a>).
+          For inquiries about Ch'ol interpreting
+          and translation email me
+          <a href="mailto:carolrlittle@gmail.com">here</a>.
+        </p>
+
+        <p class="contact-block">
+          <strong>Contact:</strong><br>
+          Department of Modern Languages,
+          Literatures, and Linguistics<br>
+          University of Oklahoma<br>
+          <br>
+          <a href="mailto:little@ou.edu">little@ou.edu</a>
+        </p>
+
+      </main>
+
+  <!-- Right: Recent & Upcoming -->
+<aside class="news-column" id="recent-upcoming">
+
+  <h2>Recent &amp; Upcoming</h2>
+  <hr class="divider" />
+
+  <h3>Upcoming</h3>
+
+  <div class="news-entry">
+    <p>
+      <span class="news-date">March 4–7, 2027</span><br>
+      <strong>ICLDC 10</strong>, Honolulu, Hawaiʻi.<br>
+      "Ch’ol language preservation through poetry."
+    </p>
   </div>
+
+  <div class="news-entry">
+    <p>
+      <span class="news-date">December 9–11, 2026</span><br>
+      <strong>FAMLi 8</strong>, San Cristóbal de las Casas, Mexico.<br>
+      "Animacidad y concordancia de plural en ch’ol"
+      (with Shenia Arcos).
+    </p>
+    <p>
+      "Un modelo de traducción colaborativa para
+      una antología de poesía en lenguas mayas
+      y otras lenguas indígenas"
+      (with Charlotte Friedman).
+    </p>
+  </div>
+
+  <h3>Recent</h3>
+
+  <div class="news-entry">
+    <p>
+      <span class="news-date">October 11, 2026</span><br>
+      <a href="https://lostcitybookstore.com/events/2026/10"
+         target="_blank">
+        <i>From Lightning's Strike</i>
+      </a>
+      book event with Charlotte Friedman.
+      Lost City Books, Washington, DC.
+    </p>
+  </div>
+
+  <div class="news-entry">
+    <p>
+      <span class="news-date">October 10, 2026</span><br>
+      <a href="https://www.theivybookshop.com/event/from-lightnings-strike-by-juana-karen-penate-an-event-with-the-translators/"
+         target="_blank">
+        <i>From Lightning's Strike</i>
+      </a>
+      book event with Charlotte Friedman,
+      in conversation with Malik Thompson.
+      Bird in Hand Coffee &amp; Books,
+      Baltimore, MD.
+    </p>
+  </div>
+
+</aside>
+
+    </div>
+  </div>
+
   <footer class="site-footer">
     <p>&copy; Carol Rose Little</p>
   </footer>
+
 </body>
 </html>
