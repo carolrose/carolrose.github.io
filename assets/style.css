@@ -33,6 +33,29 @@ h2{font-size:1.5rem; margin:0 0 .25rem}
   .sidebar .headshot, img.headshot{ width:150px; height:150px; }
 }
 
+
+/* Give Recent & Upcoming more breathing room */
+.news-column {
+  padding-right: 35px;
+}
+
+/* Add space at the right edge of the homepage */
+.home-columns {
+  padding-right: 25px;
+}
+
+/* Mobile */
+@media (max-width: 1100px) {
+  .home-columns {
+    padding-right: 0;
+  }
+
+  .news-column {
+    padding-right: 0;
+  }
+}
+
+
 /* ===== Two-column layout ===== */
 
 /* HIDE buggy mobile header and menu toggle entirely */
