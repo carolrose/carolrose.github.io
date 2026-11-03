@@ -120,6 +120,14 @@ figure img:not(.headshot){
   }
 }
 
+/* Small book cover on homepage */
+.content img.book-cover,
+.layout main img.book-cover,
+.content img.img-small {
+  width: 180px !important;
+  max-width: 180px !important;
+  height: auto !important;
+}
 
 /* Optional helper sizes */
 .content img.img-small,
