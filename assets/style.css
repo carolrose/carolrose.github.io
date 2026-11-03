@@ -74,6 +74,46 @@ figure img:not(.headshot){
   margin:1rem 0;
 }
 
+
+/* Homepage news column */
+.homepage .news-column {
+  padding: 24px 20px;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Keep the book image smaller */
+.homepage .content img.img-small {
+  max-width: 180px !important;
+}
+
+/* Medium screens */
+@media (min-width: 960px) {
+  .homepage .news-column {
+    grid-column: 2;
+  }
+}
+
+/* Three columns on larger screens */
+@media (min-width: 1100px) {
+  .homepage .layout {
+    grid-template-columns: 280px minmax(0, 1fr) 260px;
+    max-width: 1400px;
+  }
+
+  .homepage .content {
+    max-width: none !important;
+    min-width: 0;
+  }
+
+  .homepage .news-column {
+    grid-column: 3;
+    border-top: none;
+    border-left: 1px solid #e5e7eb;
+    padding: 24px;
+  }
+}
+
+
 /* Optional helper sizes */
 .content img.img-small,
 .layout main img.img-small { max-width: 320px !important; height: auto !important; }
