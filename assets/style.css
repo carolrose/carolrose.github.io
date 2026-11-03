@@ -75,6 +75,13 @@ figure img:not(.headshot){
 }
 
 
+.content img.img-small,
+.layout main img.img-small {
+  max-width: 180px !important;
+  height: auto !important;
+}
+
+
 /* Homepage news column */
 .homepage .news-column {
   padding: 24px 20px;
